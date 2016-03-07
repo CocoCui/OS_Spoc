@@ -1,0 +1,40 @@
+Begin from: 0
+Free Blocks:
+begin:100 size:924
+Begin from: 100
+Free Blocks:
+begin:200 size:824
+Begin from: 200
+Free Blocks:
+begin:300 size:724
+Begin from: 300
+Free Blocks:
+begin:400 size:624
+Begin from: 400
+Free Blocks:
+begin:1000 size:24
+Failed
+Free Blocks:
+begin:1000 size:24
+---------
+free 100 to 100
+Free Blocks:
+begin:100 size:100
+begin:1000 size:24
+free 300 to 100
+Free Blocks:
+begin:100 size:100
+begin:300 size:100
+begin:1000 size:24
+free 200 to 100
+merged with free memory block begin from 100, size: 100
+merged with free memory block begin from 300, size: 100
+Free Blocks:
+begin:100 size:300
+begin:1000 size:24
+free 0 to 100
+merged with free memory block begin from 100, size: 300
+Free Blocks:
+begin:0 size:400
+begin:1000 size:24
+
