@@ -11,7 +11,6 @@ for l in lines:
     mem.extend(data)
 
 pdt_list = mem[pdbr:pdbr+32]
-
 def convert(addr):
     print 'Virtual Address',addr
     addr = int(addr,16)
@@ -31,7 +30,7 @@ def convert(addr):
         print '      --> Fault (page table entry not valid)'
         return
     pt = mem[pte_pfn * 32 + (addr & 31)]
-    pa = (pte_pfn << 5) + addr & 31
+    pa = (pte_pfn * 32 ) + (addr & 31)
     print '      --> Translates to Physical Address ' + str(hex(pa)) + ' --> Value: ' + pt
 
 if __name__ == '__main__':
